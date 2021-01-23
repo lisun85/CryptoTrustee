@@ -9,9 +9,7 @@ contract Trustee {
     using SafeMath for uint256;
 
     address public admin; // Setting admin / owner 
-    
-    bool isStopped = false; // This variable is specifically created for the Circuit Breaker design pattery. Bool must be false in order for contract to work.
-    
+        
     //Struct 
     struct Grantor {
         uint8 id;
